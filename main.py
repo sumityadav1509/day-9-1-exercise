@@ -11,18 +11,21 @@ student_scores = {
 
 
 #TODO-2: Write your code below to add the grades to student_grades.👇
-for grade in student_scores:
-  print(grade)
-  student_grades=student_scores[grade]
-  if student_grades>91 and student_grades<100:
-    print("Outstanding")
-  elif student_grades>81 and student_grades<90:
-    print("Exceeds Expectation")
-  elif student_grades>71 and student_grades<80:
-    print("Acceptable") 
-  elif student_grades<70:
-    print("Fail.")    
-
+# print(student_scores)
+student_grades={}
+for student in student_scores:
+  # print(student)
+  score=student_scores[student]
+  print(score)
+  if score>90:
+    student_grades[student]="Outstanding"
+  elif score>80:
+    student_grades[student]="Exceeds Expectation"
+  elif score>70:
+    student_grades[student]="Acceptable"
+  elif score<70:
+    student_grades[student]="Fail"          
+  
     
 
 # 🚨 Don't change the code below 👇
