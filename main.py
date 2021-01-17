@@ -19,7 +19,7 @@ for grade in student_scores:
   elif student_grades>81 and student_grades<90:
     print("Exceeds Expectation")
   elif student_grades>71 and student_grades<80:
-    print("Acceptable")
+    print("Acceptable") 
   elif student_grades<70:
     print("Fail.")    
 
